@@ -1,0 +1,146 @@
+.hero-bg {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #030712;
+}
+
+.grid-bg {
+  background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+
+  background-size:42px 42px;
+}
+
+/* Left Glow */
+
+.hero-bg::before{
+
+content:"";
+
+position:absolute;
+
+width:650px;
+
+height:650px;
+
+border-radius:50%;
+
+background:#2563eb;
+
+filter:blur(180px);
+
+opacity:.16;
+
+left:-220px;
+
+top:-180px;
+
+}
+
+/* Right Glow */
+
+.hero-bg::after{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+
+height:500px;
+
+border-radius:50%;
+
+background:#1d4ed8;
+
+filter:blur(170px);
+
+opacity:.12;
+
+right:-180px;
+
+bottom:-150px;
+
+}
+
+.skill-pill{
+
+transition:.35s;
+
+}
+
+.skill-pill:hover{
+
+transform:translateY(-6px);
+
+border-color:#3b82f6;
+
+box-shadow:0 0 35px rgba(59,130,246,.25);
+
+background:rgba(255,255,255,.03);
+
+}
+
+.hero-btn{
+
+transition:.35s;
+
+}
+
+.hero-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 15px 40px rgba(37,99,235,.35);
+
+}
+
+.hero-name{
+
+line-height:1.05;
+
+letter-spacing:-2px;
+
+}
+/* Scroll Indicator */
+
+.scroll-indicator{
+    position: absolute;
+    left: 50%;
+    bottom: -70px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: all .3s ease;
+    z-index: 20;
+}
+
+.scroll-indicator:hover {
+  color: white;
+}
+
+.scroll-text {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.scroll-arrow {
+  animation: bounceArrow 1.8s infinite;
+}
+
+@keyframes bounceArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
