@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Download, Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
-
+const BASE_URL = import.meta.env.BASE_URL;
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -38,7 +38,7 @@ function Navbar() {
 
           <div>
             <img
-              src="/profile.jpeg"
+              src={`${BASE_URL}profile.jpeg`}
               alt="Shubhi Agrahari"
               className="h-12 w-12 rounded-full object-cover"
             />
@@ -69,7 +69,7 @@ function Navbar() {
           <div className="hidden md:flex justify-end">
 
             <a
-              href="/resume.pdf"
+              href={`${BASE_URL}resume.pdf`}
               download
               className="flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-500"
             >
@@ -112,7 +112,7 @@ function Navbar() {
             ))}
 
             <a
-              href="/resume.pdf"
+              href={`${BASE_URL}resume.pdf`}
               download
               className="flex items-center justify-center gap-2 rounded-lg bg-blue-600 py-3 text-white"
             >
