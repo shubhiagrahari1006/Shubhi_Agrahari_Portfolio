@@ -1,4 +1,4 @@
-import Navbar from "./components/navbar/navbar";
+import Navbar from "./components/Navbar/navbar";
 import Hero from "./components/hero/hero";
 import About from "./components/about/about";
 import Badges from "./components/badges/badges";
