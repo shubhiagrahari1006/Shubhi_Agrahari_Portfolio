@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-
+const BASE_URL = import.meta.env.BASE_URL;
 const projects = [
 
 {
@@ -8,7 +8,7 @@ title:"CareerLens AI",
 
 badge:"AI / Machine Learning",
 
-video:"/projects/careerlens.mp4",
+video: `${BASE_URL}projects/careerlens.mp4`,
 
 tech:[
 "Python",
@@ -42,7 +42,7 @@ title:"AI Resume & Portfolio Builder",
 
 badge:"AI",
 
-video:"/projects/resume_builder.mp4",
+video: `${BASE_URL}projects/resume_builder.mp4`,
 
 tech:[
 "Python",
@@ -74,7 +74,7 @@ title:"Cryptography-Based Secure Student Management System",
 
 badge:"Full Stack",
 
-image:"/projects/cryptography.png",
+image: `${BASE_URL}projects/cryptography.png`,
 
 tech:[
 "MySQL",
@@ -106,7 +106,7 @@ title:"Binance Futures Trading Bot",
 
 badge:"Python",
 
-image:"/projects/trading_bot.png",
+image: `${BASE_URL}projects/trading_bot.png`,
 
 tech:[
 "Python",
@@ -137,7 +137,7 @@ github:"https://github.com/shubhiagrahari1006/binance-futures-trading-bot"
 
   badge: "Web",
 
-  image: "/projects/airport.png",
+  image: `${BASE_URL}projects/airport.png`,
 
   tech: [
     "React.js",

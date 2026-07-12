@@ -1,3 +1,5 @@
+const BASE_URL = import.meta.env.BASE_URL;
+
 function Badges() {
   return (
     <section
@@ -27,7 +29,7 @@ function Badges() {
           <div className="rounded-2xl border border-white/10 bg-[#111827]/70 p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,.18)]">
 
             <img
-              src="/badges/gssoc.png"
+              src={`${BASE_URL}badges/gssoc.png`}
               alt="GSSoC"
               className="mx-auto mb-5 h-28 object-contain"
             />
@@ -59,7 +61,7 @@ function Badges() {
           <div className="rounded-2xl border border-white/10 bg-[#111827]/70 p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,.18)]">
 
             <img
-              src="/badges/ibm.png"
+              src={`${BASE_URL}badges/ibm.png`}
               alt="IBM Badge"
               className="mx-auto mb-5 h-28 object-contain"
             />
